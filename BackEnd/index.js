@@ -29,5 +29,5 @@ app.use(function (req, res, next) {});
 app.use((err, req, res, next) => {});
 
 // Start Listening
-const port = 3000;
+const port = process.env.PORT;
 app.listen(port, () => {});
